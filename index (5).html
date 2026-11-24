@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridian Motors – Cars, Prices &amp; Test Drives</title>
+  <meta name="description" content="Explore Meridian Motors’ sedan, SUV, hatchback and electric models. Compare specifications and prices, then book a free test drive.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Reusable car illustrations (replace with real photos in production) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="car-sedan" viewBox="0 0 400 160">
+    <path fill="currentColor" d="M18 112c0-12 10-19 28-22l44-6c20-26 52-40 90-40h60c34 0 60 16 82 40l40 6c14 2 22 10 22 22v12H18z"/>
+    <path fill="var(--glass)" d="M112 82c14-18 38-28 66-28h38v28zM226 54h26c22 0 40 12 54 28h-80z"/>
+    <circle cx="98" cy="124" r="27" fill="#16202a"/><circle cx="98" cy="124" r="12" fill="#cfd6dc"/>
+    <circle cx="318" cy="124" r="27" fill="#16202a"/><circle cx="318" cy="124" r="12" fill="#cfd6dc"/>
+  </symbol>
+  <symbol id="car-suv" viewBox="0 0 400 160">
+    <path fill="currentColor" d="M14 114c0-14 10-22 28-24l42-6c14-30 44-50 88-50h96c34 0 58 22 72 50l38 6c14 2 22 10 22 24v12H14z"/>
+    <path fill="var(--glass)" d="M104 84c10-20 30-34 62-34h46v34zM222 50h38c22 0 38 14 48 34h-86z"/>
+    <circle cx="96" cy="126" r="28" fill="#16202a"/><circle cx="96" cy="126" r="13" fill="#cfd6dc"/>
+    <circle cx="316" cy="126" r="28" fill="#16202a"/><circle cx="316" cy="126" r="13" fill="#cfd6dc"/>
+  </symbol>
+  <symbol id="car-hatch" viewBox="0 0 400 160">
+    <path fill="currentColor" d="M30 114c0-12 10-18 26-20l40-6c16-28 44-44 80-44h86c30 0 42 26 60 46l38 4c14 2 22 10 22 20v12H30z"/>
+    <path fill="var(--glass)" d="M114 88c12-18 32-30 60-30h40v30zM224 58h28c14 0 26 14 38 30h-66z"/>
+    <circle cx="106" cy="126" r="26" fill="#16202a"/><circle cx="106" cy="126" r="12" fill="#cfd6dc"/>
+    <circle cx="312" cy="126" r="26" fill="#16202a"/><circle cx="312" cy="126" r="12" fill="#cfd6dc"/>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <a class="brand" href="#top">Meridian <span>Motors</span></a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#models">Models</a></li>
+      <li><a href="#compare">Compare</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#test-drive">Test drive</a></li>
+      <li><a href="#visit">Visit us</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-small" href="#test-drive">Book a test drive</a>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Four cars. One honest price list.</h1>
+      <p>From a city hatchback to a seven-seat SUV and our first all-electric model. See what each one costs, what it comes with, and drive it before you decide.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#models">View all models</a>
+        <a class="btn btn-outline" href="#compare">Compare side by side</a>
+      </div>
+    </div>
+    <div class="hero-car" aria-hidden="true">
+      <svg viewBox="0 0 400 160" style="color:#ff6a2b"><use href="#car-sedan"/></svg>
+      <div class="road"></div>
+    </div>
+  </section>
+
+  <!-- Models -->
+  <section id="models" class="section">
+    <div class="section-head">
+      <h2>Our models</h2>
+      <p>Prices are ex-showroom starting prices and may vary by city and variant.</p>
+    </div>
+
+    <div class="models">
+
+      <article class="model">
+        <div class="model-img" style="color:#ff6a2b"><svg viewBox="0 0 400 160" role="img" aria-label="Aero S sedan in orange"><use href="#car-sedan"/></svg></div>
+        <div class="model-body">
+          <p class="tag">Sedan</p>
+          <h3>Aero S</h3>
+          <p class="price">From ₹11.9 lakh</p>
+          <dl class="specs">
+            <div><dt>Engine</dt><dd>1.5L turbo petrol</dd></div>
+            <div><dt>Power</dt><dd>158 hp</dd></div>
+            <div><dt>Mileage</dt><dd>18.4 km/l</dd></div>
+            <div><dt>Seats</dt><dd>5</dd></div>
+          </dl>
+          <ul class="mini-features">
+            <li>Sunroof</li><li>Wireless charging</li><li>6 airbags</li>
+          </ul>
+          <div class="model-actions">
+            <a class="btn btn-small" href="#test-drive">Test drive</a>
+            <a class="link" href="#compare">Compare</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="model">
+        <div class="model-img" style="color:#0e5a6b"><svg viewBox="0 0 400 160" role="img" aria-label="Terra X SUV in teal"><use href="#car-suv"/></svg></div>
+        <div class="model-body">
+          <p class="tag">SUV · 7-seater</p>
+          <h3>Terra X</h3>
+          <p class="price">From ₹16.5 lakh</p>
+          <dl class="specs">
+            <div><dt>Engine</dt><dd>2.0L diesel</dd></div>
+            <div><dt>Power</dt><dd>170 hp</dd></div>
+            <div><dt>Mileage</dt><dd>15.8 km/l</dd></div>
+            <div><dt>Seats</dt><dd>7</dd></div>
+          </dl>
+          <ul class="mini-features">
+            <li>4×4 option</li><li>360° camera</li><li>Panoramic roof</li>
+          </ul>
+          <div class="model-actions">
+            <a class="btn btn-small" href="#test-drive">Test drive</a>
+            <a class="link" href="#compare">Compare</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="model">
+        <div class="model-img" style="color:#5b6b7a"><svg viewBox="0 0 400 160" role="img" aria-label="Volt E electric hatchback in grey"><use href="#car-hatch"/></svg></div>
+        <div class="model-body">
+          <p class="tag">Electric hatchback</p>
+          <h3>Volt E</h3>
+          <p class="price">From ₹14.2 lakh</p>
+          <dl class="specs">
+            <div><dt>Motor</dt><dd>Single, 135 hp</dd></div>
+            <div><dt>Range</dt><dd>420 km (claimed)</dd></div>
+            <div><dt>Fast charge</dt><dd>10–80% in 38 min</dd></div>
+            <div><dt>Seats</dt><dd>5</dd></div>
+          </dl>
+          <ul class="mini-features">
+            <li>Home charger included</li><li>Over-the-air updates</li><li>Regen braking</li>
+          </ul>
+          <div class="model-actions">
+            <a class="btn btn-small" href="#test-drive">Test drive</a>
+            <a class="link" href="#compare">Compare</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="model">
+        <div class="model-img" style="color:#c7a600"><svg viewBox="0 0 400 160" role="img" aria-label="Metro hatchback in yellow"><use href="#car-hatch"/></svg></div>
+        <div class="model-body">
+          <p class="tag">Hatchback</p>
+          <h3>Metro</h3>
+          <p class="price">From ₹6.8 lakh</p>
+          <dl class="specs">
+            <div><dt>Engine</dt><dd>1.2L petrol</dd></div>
+            <div><dt>Power</dt><dd>88 hp</dd></div>
+            <div><dt>Mileage</dt><dd>22.1 km/l</dd></div>
+            <div><dt>Seats</dt><dd>5</dd></div>
+          </dl>
+          <ul class="mini-features">
+            <li>Touchscreen</li><li>Rear camera</li><li>CNG option</li>
+          </ul>
+          <div class="model-actions">
+            <a class="btn btn-small" href="#test-drive">Test drive</a>
+            <a class="link" href="#compare">Compare</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section id="compare" class="section tinted">
+    <div class="section-head">
+      <h2>Compare models</h2>
+      <p>Top variants shown. Scroll sideways on small screens.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">Specification comparison of Aero S, Terra X, Volt E and Metro</caption>
+        <thead>
+          <tr><th scope="col">Specification</th><th scope="col">Aero S</th><th scope="col">Terra X</th><th scope="col">Volt E</th><th scope="col">Metro</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Ex-showroom price</th><td>₹11.9 – 15.4 lakh</td><td>₹16.5 – 22.8 lakh</td><td>₹14.2 – 17.6 lakh</td><td>₹6.8 – 9.1 lakh</td></tr>
+          <tr><th scope="row">Body type</th><td>Sedan</td><td>SUV</td><td>Hatchback</td><td>Hatchback</td></tr>
+          <tr><th scope="row">Fuel</th><td>Petrol</td><td>Diesel</td><td>Electric</td><td>Petrol / CNG</td></tr>
+          <tr><th scope="row">Power</th><td>158 hp</td><td>170 hp</td><td>135 hp</td><td>88 hp</td></tr>
+          <tr><th scope="row">Torque</th><td>240 Nm</td><td>350 Nm</td><td>250 Nm</td><td>113 Nm</td></tr>
+          <tr><th scope="row">Transmission</th><td>6-speed auto / 6-speed manual</td><td>8-speed auto</td><td>Single-speed</td><td>5-speed manual / AMT</td></tr>
+          <tr><th scope="row">Mileage / range</th><td>18.4 km/l</td><td>15.8 km/l</td><td>420 km</td><td>22.1 km/l</td></tr>
+          <tr><th scope="row">Boot space</th><td>480 L</td><td>240 L (3rd row up)</td><td>350 L</td><td>318 L</td></tr>
+          <tr><th scope="row">Seating</th><td>5</td><td>7</td><td>5</td><td>5</td></tr>
+          <tr><th scope="row">Airbags</th><td>6</td><td>6</td><td>6</td><td>2 (6 on top trim)</td></tr>
+          <tr><th scope="row">Driver assistance</th><td>Lane assist, adaptive cruise</td><td>Lane assist, adaptive cruise, 360° view</td><td>Lane assist, auto emergency braking</td><td>Rear sensors</td></tr>
+          <tr><th scope="row">Warranty</th><td>3 years / 100,000 km</td><td>3 years / 100,000 km</td><td>3 yrs vehicle, 8 yrs battery</td><td>2 years / 40,000 km</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="section-head">
+      <h2>What every Meridian comes with</h2>
+    </div>
+    <div class="features">
+      <article>
+        <h3>Safety first</h3>
+        <p>Six airbags, ABS with brake assist and ISOFIX child-seat mounts come on all models above the entry trim.</p>
+      </article>
+      <article>
+        <h3>Connected cabin</h3>
+        <p>Wireless phone mirroring, voice commands and a 10-inch touchscreen on most variants.</p>
+      </article>
+      <article>
+        <h3>Comfort</h3>
+        <p>Rear AC vents, ventilated front seats on top trims and a quiet, well-insulated cabin.</p>
+      </article>
+      <article>
+        <h3>Ownership</h3>
+        <p>Free first service, 24×7 roadside assistance and service reminders sent to your phone.</p>
+      </article>
+      <article>
+        <h3>Finance and exchange</h3>
+        <p>Loans from partner banks and instant valuation of your old car. Ask our team for current rates.</p>
+      </article>
+      <article>
+        <h3>Customize it</h3>
+        <p>Choose from 9 colors, alloy wheel designs and genuine accessory packs at the showroom.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Test drive -->
+  <section id="test-drive" class="section drive">
+    <div class="drive-info">
+      <h2>Book a free test drive</h2>
+      <p>Pick a car, a day and a time. We will call you to confirm within a few hours.</p>
+      <ul class="steps">
+        <li><strong>30 minutes</strong> behind the wheel, with a product specialist beside you.</li>
+        <li><strong>Bring your driving licence.</strong> It is required for every driver.</li>
+        <li><strong>Home test drive</strong> available within 15 km of any Meridian showroom.</li>
+        <li><strong>No obligation.</strong> There is no fee and no pressure to buy.</li>
+      </ul>
+    </div>
+
+    <form class="booking" action="#" method="post">
+      <div class="row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Email (optional)</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="model">Model</label>
+          <select id="model" name="model">
+            <option>Aero S</option>
+            <option>Terra X</option>
+            <option>Volt E</option>
+            <option>Metro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fuel">Fuel type</label>
+          <select id="fuel" name="fuel">
+            <option>Any</option>
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>Electric</option>
+            <option>CNG</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="date">Preferred date</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="slot">Time slot</label>
+          <select id="slot" name="slot">
+            <option>10 am – 12 pm</option>
+            <option>12 pm – 3 pm</option>
+            <option>3 pm – 6 pm</option>
+          </select>
+        </div>
+      </div>
+      <fieldset class="field place">
+        <legend>Where would you like to drive?</legend>
+        <label class="choice"><input type="radio" name="place" value="showroom" checked> At the showroom</label>
+        <label class="choice"><input type="radio" name="place" value="home"> At my home</label>
+      </fieldset>
+      <label class="choice consent"><input type="checkbox" name="licence" required> I hold a valid driving licence and will carry it.</label>
+      <button class="btn btn-full" type="submit">Request test drive</button>
+    </form>
+  </section>
+
+  <!-- Visit -->
+  <section id="visit" class="section">
+    <div class="section-head">
+      <h2>Visit the showroom</h2>
+      <p>Replace these placeholder details with your own.</p>
+    </div>
+    <div class="visit">
+      <div>
+        <h3>Address</h3>
+        <address>Meridian Motors<br>45 Auto Nagar Main Road<br>Your City, State 000000</address>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Mon – Sat: 9:30 am – 7:30 pm<br>Sunday: 10 am – 5 pm</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Sales: <a href="tel:+910000000000">+91 00000 00000</a><br>
+        Service: <a href="tel:+910000000001">+91 00000 00001</a><br>
+        <a href="mailto:sales@meridian.example">sales@meridian.example</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Meridian Motors. Prices, specifications and features are indicative and subject to change. Images are illustrative.</p>
+</footer>
+
+</body>
+</html>
